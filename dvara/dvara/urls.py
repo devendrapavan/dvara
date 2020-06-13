@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('create-category/', CreateCategory.as_view()),
     path('create-sub-category/', CreateSubCategory.as_view()),
-    path('get-categories/', ViewCategories.as_view())
+    path('get-categories/', ViewCategories.as_view()),
+    path('get-names-categories/', GetNamesCategories.as_view())
 ]
