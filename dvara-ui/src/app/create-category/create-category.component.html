@@ -1,0 +1,11 @@
+<h4>Create Team</h4>
+<form #CreateTeamForm="ngForm" class="was-validated">
+  <div class="form-group">
+    <label for="teamname">Category Name:</label>
+    <input type="text" class="form-control" id="name" placeholder="Enter Team name" #team_name="ngModel"
+      [(ngModel)]="team.name" name="name" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <button type="submit" (click)="createTeam(CreateTeamForm)" class="btn btn-primary">Submit</button>
+</form>
